@@ -1,7 +1,7 @@
 {
-  "name": "intento3",
+  "name": "phaser-game",
   "version": "1.0.0",
-  "description": "Intento 3",
+  "description": "Juego con Mario por ahora",
   "main": "index.js",
   "scripts": {
     "start": "./node_modules/.bin/http-server -s -o -p 8083 -c-1 ",
