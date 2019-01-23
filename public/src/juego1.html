@@ -40,7 +40,7 @@
 
     function preload () {
         this.load.image('background', 'assets/background.jpg');
-        this.load.spritesheet('mario','assets/mario.jpg', {frameWidth:67, frameHeight:63});
+        this.load.spritesheet('mario','assets/sshot-240.png', {frameWidth:70, frameHeight:85});
     }
 
     function create () {
@@ -50,7 +50,7 @@
         player.setCollideWorldBounds(true);
         this.anims.create({
             key: 'left',
-            frames: this.anims.generateFrameNumbers('mario', { start: 0, end: 3 }),
+            frames: this.anims.generateFrameNumbers('mario', { start: 0, end: 4 }),
             frameRate: 10,
             repeat: -1
         });
