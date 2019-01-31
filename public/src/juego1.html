@@ -42,8 +42,8 @@
     function preload () {
         this.load.image('background', 'assets/background.jpg');
         this.load.image('star', 'assets/star.png');
-        this.load.spritesheet('mario','assets/sshot-240.png', {frameWidth:70, frameHeight:85});
-
+        //this.load.spritesheet('mario','assets/sshot-240.png', {frameWidth:70, frameHeight:85});
+        this.load.spritesheet('mario','assets/pacman.png', {frameWidth:101, frameHeight:121});
     }
     function create () {
         this.add.image(0, 0, 'background').setOrigin(0, 0);
@@ -52,18 +52,18 @@
         player.setCollideWorldBounds(true);
         this.anims.create({
             key: 'left',
-            frames: this.anims.generateFrameNumbers('mario', { start: 0, end: 3 }),
+            frames: this.anims.generateFrameNumbers('mario', { start: 0, end: 2 }),
             frameRate: 10,
             repeat: -1
         });
         this.anims.create({
             key: 'turn',
-            frames: [ { key: 'mario', frame: 4 } ],
+            frames: [ { key: 'mario', frame: 0 } ],
             frameRate: 20
         });
         this.anims.create({
             key: 'right',
-            frames: this.anims.generateFrameNumbers('mario', { start: 5, end: 8 }),
+            frames: this.anims.generateFrameNumbers('mario', { start: 0, end: 2 }),
             frameRate: 10,
             repeat: -1
         });
